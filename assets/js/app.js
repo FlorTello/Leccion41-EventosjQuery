@@ -1,9 +1,9 @@
 $(_=>{
-  var screenVal = $("input:text");
+  let screenVal = $("input:text");
 
   $("input:button").on("click",function(){
-    var eachNumber = $(this).val();
-    var currentScreen = screenVal.val();
+    let eachNumber = $(this).val();
+    let currentScreen = screenVal.val();
     currentScreen += eachNumber;
     screenVal.val(currentScreen);
     if($(this).val() == "C"){
